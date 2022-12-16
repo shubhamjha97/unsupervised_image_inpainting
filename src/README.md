@@ -1,24 +1,17 @@
-## Steps to infer:
+# Modified CoModGAN for Image Inpainting
 
-0. Setup python environment. Requirements are:
+## Setup the environment
+
 ```
-torch=1.10.1
-torchvision=0.11.2
-cv2
-tensorflow=1.15.0
-PIL
-tqdm
-easydict
-pandas
-numpy
+conda env create -f environment.yml
 ```
 
-1. Download models:
+## Download pretrained models
 ```
 bash download_models.sh
 ```
 
-2. Do inference:
+## Run inference
 ```
 python infer.py -i <input_dir_with_masks> -o <output_images> -d FFHQ
 ```

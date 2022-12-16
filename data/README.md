@@ -1,5 +1,11 @@
 # Download Datasets for Inpainting
 
+If kaggle CLI API is not set up then:
+```
+pip install kaggle
+```
+Follow the instructions here to do the authentication: [Link](https://www.kaggle.com/docs/api#getting-started-installation-&-authentication)
+
 ## FFHQ
 
 - Repo: https://github.com/NVlabs/ffhq-dataset
@@ -21,8 +27,14 @@
 - Kaggle: https://www.kaggle.com/c/painter-by-numbers/data
 - Kaggle command: `kaggle competitions download -c painter-by-numbers` (It requires `pip install kaggle==1.5.3`)
 
-# Validation Set + Masks: https://polybox.ethz.ch/index.php/s/nBta4VE0uBjG65D
-# Validation Ground-Truth: https://polybox.ethz.ch/index.php/s/ishe5ocVOOvdiC3
+## Validation set of all datasets with pre generated masks for evaluation purposes:
 
-# Test Set + Masks: https://polybox.ethz.ch/index.php/s/qnf3NglUDqmvGBr
-# Test Ground-Truth: https://polybox.ethz.ch/index.php/s/vwT1xCPIOwbb6t7
+```
+wget https://polybox.ethz.ch/index.php/s/nBta4VE0uBjG65D/download
+```
+
+Ground Truths for each of the images:
+
+```
+wget https://polybox.ethz.ch/index.php/s/ishe5ocVOOvdiC3/download
+```
