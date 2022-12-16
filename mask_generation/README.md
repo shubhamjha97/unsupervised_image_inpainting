@@ -7,12 +7,12 @@ import numpy as np
 from utils import MaskGeneration, MergeMask
 from PIL import Image
 import random
-image_dir = '../src'
+image_dir = ' ../assets/imgs'
 input_file = f'{image_dir}/TribunaUffizi.jpg'
 array = np.array(Image.open(input_file))
 ```
 
- <img src="../src/TribunaUffizi.jpg" width=500/>
+ <img src=" ../assets/imgs/TribunaUffizi.jpg" width=500/>
 
 
 ```python
@@ -43,7 +43,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 18.82%
 
 
-<img src="../src/ThickStrokes.png" width=500/>
+<img src="../assets/imgs/ThickStrokes.png" width=500/>
 
 
 ```python
@@ -66,7 +66,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 11.52%
 
 
-<img src="../src/MediumStrokes.png" width=500/>
+<img src="../assets/imgs/MediumStrokes.png" width=500/>
 
 
 ```python
@@ -89,7 +89,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 13.77%
 
 
-<img src="../src/ThinStrokes.png" width=500/>
+<img src="../assets/imgs/ThinStrokes.png" width=500/>
 
 ## Image Completion Masks
 
@@ -115,7 +115,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 50.00%
 
 
-<img src="../src/Every_N_Lines.png" width=500/>
+<img src="../assets/imgs/Every_N_Lines.png" width=500/>
 
 
 ```python
@@ -140,7 +140,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 50.04%
 
 
-<img src="../src/Completion.png" width=500/>
+<img src="../assets/imgs/Completion.png" width=500/>
 
 
 ```python
@@ -164,7 +164,7 @@ Image.fromarray(out).save(filename)
     Inpainting Ratio: 76.07%
 
 
-<img src="../src/Expand.png" width=500/>
+<img src="../assets/imgs/Expand.png" width=500/>
 
 ## Super Resolution Inpainting
 
@@ -190,4 +190,4 @@ Image.fromarray(out).save(filename)
 
 
 #### Check image size in previous cell!
-<img src="../src/Nearest_Neighbor.png" width=500/>
+<img src="../assets/imgs/Nearest_Neighbor.png" width=500/>
